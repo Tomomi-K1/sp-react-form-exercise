@@ -1,12 +1,13 @@
 // import './App.css';
 import React from 'react';
-// import Clicker from './Clicker';
+import TodoList from './TodoList';
   
+// App - this component should render the TodoList component
 
 function App() {
   return (
     <div className='App'>
-
+      <TodoList />
     </div>
   );
 }

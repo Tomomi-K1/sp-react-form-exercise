@@ -1,11 +1,11 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import NewTodoForm from './NewTodoForm';
 
-test('renders app', () => {
-  render(<App />);
+test('renders', () => {
+  render(<NewTodoForm />);
 });
 
 test('matches snapshot', () => {
-  const { asFragment } = render(<App />);
+  const { asFragment } = render(<NewTodoForm />);
     expect(asFragment()).toMatchSnapshot();
 })

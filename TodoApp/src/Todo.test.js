@@ -1,11 +1,11 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import Todo from './Todo';
 
-test('renders app', () => {
-  render(<App />);
+test('renders', () => {
+  render(<Todo />);
 });
 
 test('matches snapshot', () => {
-  const { asFragment } = render(<App />);
+  const { asFragment } = render(<Todo />);
     expect(asFragment()).toMatchSnapshot();
 })
