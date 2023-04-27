@@ -6,11 +6,13 @@ const Box = ({color, width, height, removeBox}) => {
 
     return (
         <div 
-        style={{
-            backgroundColor: color, 
-            height:height, 
-            width: width
-        }}>
+            style={{
+                backgroundColor: color, 
+                height:height, 
+                width: width
+            }}
+            data-testid={color}
+        >
         <h4 onClick={removeBox}>x</h4>
         </div>
     )
